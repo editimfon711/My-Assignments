@@ -19,6 +19,18 @@
       width: 100%;
       height: auto;
     }
+    .image-row {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 50px;        
+  }
+
+  .image-row img {
+    width: 100%;      
+    max-width: 300px;  
+    height: auto;     
+    flex: 1 1 auto;   
+  }
   </style>
 </head>
 <body>
@@ -61,22 +73,16 @@
       commodi eveniet tempora modi esse ullam corrupti error quos voluptates doloremque nam sunt quo vitae ea 
       expedita. Architecto eius deleniti ducimus quidem modiporro labore ut numquam recusandae hic minima iure dolore, 
       ab maiores in earum sit nostrum culpa mollitia, a quia!</p>
-    <div class="image-container">
-    <div class="side-by-side">
-        <source srcset="Screenshot (3).png" media="(max-width: 200px)">
-      <source srcset="Screenshot (3).png" media="(max-width: 24px)">
-      <img src="Screenshot (3).png" alt="Responsive Example" width="90%">
-    </div>
-    <div class="side-by-side">
-     <source srcset="Screenshot (2).png" media="(max-width: 200px)">
-      <source srcset="Screenshot (2).png" media="(max-width: 24px)">
-      <img src="Screenshot (2).png" alt="Responsive Example" width="90%">
-    </div>
-    <div class="side-by-side">
-        <source srcset="Screenshot (4).png" media="(max-width: 200px)">
-      <source srcset="Screenshot (4).png" media="(max-width: 24px)">
-      <img src="Screenshot (4).png" alt="Responsive Example" width="90%">
-    </div>
+    <div class="image-row">
+        <source srcset="Screenshot (3).png" media="(width: 20px)">
+      <source srcset="Screenshot (3).png" media="(width: 24px)">
+      <img src="Screenshot (3).png" alt="Responsive Example" width="10%">
+     <source srcset="Screenshot (2).png" media="(width: 20px)">
+      <source srcset="Screenshot (2).png" media="(width: 4px)">
+      <img src="Screenshot (2).png" alt="Responsive Example" width="10%">
+        <source srcset="Screenshot (4).png" media="(width: 20px)">
+      <source srcset="Screenshot (4).png" media="(width: 4px)">
+      <img src="Screenshot (4).png" alt="Responsive Example" width="10%">
     </div>
 </head>
 </body>
